@@ -1,7 +1,7 @@
 # PAASPORT Adapter Template
-> Template for the creation of an Adapter for PaaSport Marketplace, the PaaS Interoperability platform 
-> Implement methods in adapter Class 
-> Provide the created adapter to test and addition to our marketplace ( contact us: http://paasport-project.eu/contact.php)
+> Template for the creation of an Adapter for PaaSport Marketplace, the PaaS Interoperability platform. 
+* Implement methods in adapter Class. 
+* Provide the created adapter to test and addition to our marketplace ( contact us: http://paasport-project.eu/contact.php)
 
 ## Prerequisites
 
