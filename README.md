@@ -1,5 +1,7 @@
-# PAASPORT 
-> PaaS Interoperability platform
+# PAASPORT Adapter Template
+> Template for the creation of an Adapter for PaaSport Marketplace, the PaaS Interoperability platform 
+> Implement methods in adapter Class 
+> Provide the created adapter to test and addition to our marketplace ( contact us: http://paasport-project.eu/contact.php)
 
 ## Prerequisites
 
@@ -25,4 +27,4 @@ Before moving on, make sure you have the required JDK and Maven version.
 
 ## Extend the Adapter
 
-* In order to extend this adapter for supporting a PaaS, provide implementations to the methods of class Adapter.java. For being able to use this adapter in PaaSpor Marketplca, the basic methods startApplication, stopApplication, deleteApplication should be implemented and at least one of the createApplication and deployApplication. Supporting more methods like getAvailableServicesList/createServiceBinding/deleteServiceBinding is optional but reccomended in order to provide full compiance with PaaSport Unified API and being able to support more functionalities through PaaSport Marketplace
+*In order to extend this adapter for supporting a PaaS, provide implementations to the methods of class Adapter.java. For being able to use this adapter in PaaSpor Marketplca, the basic methods startApplication, stopApplication, deleteApplication should be implemented and at least one of the createApplication and deployApplication. Supporting more methods like getAvailableServicesList/createServiceBinding/deleteServiceBinding is optional but reccomended in order to provide full compiance with PaaSport Unified API and being able to support more functionalities through PaaSport Marketplace
