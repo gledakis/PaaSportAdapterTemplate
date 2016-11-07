@@ -4,17 +4,24 @@ import eu.paasport.model.*;
 import eu.paasport.services.api.adapter.response.*;
 
 //import java.util.logging.Logger;
-
-
 /**
- * Template for the Adapter class that is used for the integration of a PaaS offering
- * on PaaSport Marketplace
+ * Template for the Adapter class that is used for the integration of a PaaS
+ * offering on PaaSport Marketplace
  */
 public class Adapter implements eu.paasport.services.api.adapter.IAdapter {
     //private static final Logger logger = Logger.getLogger(Adapter.class.getName());
 
     public CreateApplicationAdapterResponse createApplication(CredentialsModel credentials, GroundedPaaSOfferingModel groundedpaasoffering, ApplicationRequest applicationrequest) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        CreateApplicationAdapterResponse response = null;
+
+        ///SAMPLE of the parameters available - These are provided by PaaSport Marketplace
+        String publicKey = credentials.getPublickey();
+        String privateKey = credentials.getPrivatekey();
+        String appicationName = applicationrequest.getName();
+        String paasEndpointUrl = groundedpaasoffering.getApiendpoint(); //---> can be fetched from Repository
+
+        return response;
     }
 
     public DeployApplicationAdapterResponse deployApplication(CredentialsModel credentials, GroundedPaaSOfferingModel groundedpaasoffering, GroundedApplicationModel groundedapp, PackageLocatorModel packagelocator) {
@@ -69,7 +76,4 @@ public class Adapter implements eu.paasport.services.api.adapter.IAdapter {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    
-    }
-   
-
+}
